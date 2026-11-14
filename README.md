@@ -1,10 +1,10 @@
 # A Minimal Heading-Feedback Loop Reduces Lateral Drift in a Low-Cost Open-Loop Quadruped
 
-Open data and code for the ICCAI 2026 paper:
+Open data and code for the ICCAI 2027 paper:
 
 > **A Minimal Heading-Feedback Loop Reduces Lateral Drift by 86% in a Low-Cost Open-Loop Quadruped**
 > Gao, W.; Liu, Z.; Pang, J.; Wan, X. — Shaanxi University of Science and Technology
-> ICCAI 2026 (12th International Conference on Computing and Artificial Intelligence), Okinawa, Japan.
+> ICCAI 2027 (13th International Conference on Computing and Artificial Intelligence), Seoul, South Korea.
 
 ## Summary
 
@@ -57,9 +57,9 @@ where `e` is the integrated yaw error (gyro z, zero-bias subtracted during a 3 s
 @inproceedings{gao2026heading,
   author    = {Gao, Weifeng and Liu, Zhihao and Pang, Jinwen and Wan, Xinze},
   title     = {A Minimal Heading-Feedback Loop Reduces Lateral Drift by 86\% in a Low-Cost Open-Loop Quadruped},
-  booktitle = {12th International Conference on Computing and Artificial Intelligence (ICCAI 2026)},
-  year      = {2026},
-  address   = {Okinawa, Japan}
+  booktitle = {13th International Conference on Computing and Artificial Intelligence (ICCAI 2027)},
+  year      = {2027},
+  address   = {Seoul, South Korea}
 }
 ```
 
