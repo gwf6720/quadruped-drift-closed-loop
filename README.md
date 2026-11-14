@@ -25,7 +25,7 @@ slip_traces/  Talc-powder slip-trace photographs (Series C)
 
 - `data/series_B_openloop.csv` — open-loop baseline, n = 20 (clean ground, trim {-43, 0, 50, 0}).
 - `data/series_D_closedloop.csv` — closed-loop, n = 10 (heading-feedback P-controller on; otherwise identical to B).
-- `data/series_C_talc.csv` — talc-powder slip-amplification, n = 10 (x/y recorded for 6 trials; C6–C9 have voltage only).
+- `data/series_C_talc.csv` — talc-powder slip-amplification, n = 10 (x, y, and pre-run voltage complete; post-run voltage recorded for C1–C5 and C10).
 
 Columns: `trial`, `date`, `pre_v` (V), `post_v` (V), `x_cm` (lateral endpoint deviation, + right / − left), `y_cm` (forward distance). The out-of-bounds threshold is |x| = 3.75 cm (leg spacing 7.5 cm, track width 15 cm).
 
@@ -36,6 +36,7 @@ cd code
 python make_figs.py          # fig1 (|x| box plot), fig2 (out-of-bounds rate), fig3 (endpoint scatter)
 python fig_signed_drift.py   # signed-drift bimodal distribution (histogram + KDE)
 python drift_analysis.py     # Mann-Whitney / Welch / bootstrap / Fisher tests
+python c_vs_b_analysis.py    # Series C vs B comparison (Mann-Whitney / Welch / bootstrap)
 ```
 
 Requires `numpy`, `scipy`, `matplotlib`.
